@@ -1,0 +1,1369 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: content-box;
+    text-decoration: none;
+    list-style: none;
+    text-transform: capitalize;
+}
+
+/*typescript start*/
+h1 {
+    font-size: 30px;
+    color: #fff;
+}
+
+p {
+    font-size: 15px;
+    color: burlywood;
+}
+
+h3 {
+    font-size: 18px;
+    color: #fff;
+}
+
+/* typescript end  */
+body {
+    background: url(images/background.jpg);
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* header start  */
+.header {
+    position: fixed;
+    padding: 3% 6% 1%;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    z-index: 1000;
+}
+
+.logo {
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.check-btn {
+    display: none;
+}
+
+.header i {
+    color: white;
+    font-size: 20px;
+}
+
+.header .nav {
+    display: flex;
+    align-items: center;
+}
+
+.header .nav a {
+    color: #fff;
+    cursor: pointer;
+    margin: 0 20px;
+}
+.header .nav a:hover{
+    text-decoration: underline;
+    color: yellow;
+}
+
+/* header end  */
+
+/* home start  */
+#home {
+    padding-top: 8%;
+    background-image: url(images/home-bg.png);
+    background-position: center;
+    background-size: cover;
+    margin-top: 7rem;
+    text-align: center;
+}
+
+#home .burger-banner img {
+    max-width: 100%;
+    width: 40rem;
+}
+
+#home p {
+    margin: 30px auto;
+    max-width: 100%;
+    width: 40rem;
+    line-height: 20px;
+}
+
+#home .btn1 {
+    color: white;
+    border: 1px solid;
+    font-size: 15px;
+    padding: 5px 30px;
+    transition: all ease-in-out .5s;
+}
+
+#home .btn1:hover {
+    background-color: #fff;
+    color: black;
+    font-weight: 700;
+}
+
+.service {
+    padding: 7% 6%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    gap: 9rem;
+    text-align: center;
+}
+
+.service1 i {
+    margin-bottom: 10px;
+    width: 17px;
+    height: 17px;
+    padding: 17px;
+    text-align: center;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+.service1 p {
+    margin-top: 10px;
+    line-height: 30px;
+}
+
+/* service end  */
+
+/* menu start  */
+#menu {
+    padding: 8% 6%;
+}
+
+.heading1 {
+    text-align: center;
+}
+
+.menubox1,
+.menubox2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(268px, auto));
+    gap: 3rem;
+    text-align: center;
+}
+
+.menu-box img {
+    max-width: 100%;
+    width: 100%;
+}
+
+.menu-list:hover img {
+    transform: translatey(-10px);
+    transition: all ease-in-out .5s;
+}
+
+.menu-list i {
+    color: yellow;
+    margin-bottom: 10px;
+}
+
+.menu-list h5 {
+    font-size: 15px;
+    color: burlywood;
+    font-weight: 500;
+    margin: 12px 0;
+}
+
+.menu-list a {
+    line-height: 30px;
+    color: #fff;
+    border: 1px solid #fff;
+    font-size: 14px;
+    padding: 5px 20px;
+    transition: all .5s ease-in-out;
+}
+
+.menu-list a:hover {
+    background-color: white;
+    color: black;
+    font-weight: 600;
+}
+
+/* menu end  */
+
+/* about start  */
+#about {
+    padding: 8% 6%;
+}
+
+.heading3 {
+    text-align: center;
+}
+
+.about-us {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.about-us img {
+    width: 36rem;
+    max-width: 100%;
+}
+
+.text1 p {
+    margin: 20px 0;
+    font-size: 12px;
+    line-height: 30px;
+}
+
+.row {
+    display: flex;
+    color: #fff;
+}
+
+.row i {
+    color: yellow;
+    margin-right: 8px;
+    font-size: 13px;
+}
+
+.text2 {
+    margin: 0 60px;
+}
+
+.price1,
+.text3,
+.veg1 {
+    display: flex;
+    align-items: center;
+    line-height: 25px;
+}
+
+.text1 a {
+    color: #fff;
+    border: 1px solid #fff;
+    transition: all ease-in .5s;
+    padding: 10px 20px;
+    line-height: 90px;
+    font-size: 14px;
+}
+
+.text1 a:hover {
+    background-color: #fff;
+    color: black;
+    font-weight: 600;
+}
+
+/* about end  */
+
+/* reviews start  */
+#reviews {
+    padding: 8% 6%;
+}
+
+.heading2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.row1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    gap: 8rem;
+    text-align: center;
+}
+
+.row1 img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.text4 h3 {
+    margin-bottom: 10px;
+}
+
+.text4 p {
+    font-size: 12px;
+    color: burlywood;
+    line-height: 25px;
+}
+
+.star i {
+    color: yellow;
+    margin: 15px 0;
+}
+
+/* reviews end  */
+
+/* contact start  */
+#contact {
+    padding: 8% 6%;
+}
+
+.heading4 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.heading4 h1 {
+    text-transform: uppercase;
+}
+
+.contact-us iframe {
+    max-width: 100%;
+    width: 100%;
+    height: 39rem;
+}
+
+.contact-us {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 27px;
+}
+
+.area {
+    text-align: center;
+}
+
+.number {
+    display: flex;
+}
+
+.number i {
+    margin-bottom: 10px;
+    width: 17px;
+    height: 17px;
+    padding: 17px;
+    text-align: center;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+.number p {
+    font-size: 12px;
+    color: burlywood;
+    margin-top: 10px;
+    line-height: 20px;
+}
+
+.email {
+    margin: 0 57px;
+}
+
+.area h1 {
+    text-transform: uppercase;
+}
+
+form .box {
+    width: 100%;
+    margin: 10px 0;
+    background: none;
+    border: 1px solid #fff;
+}
+
+form #box1 {
+    width: 100%;
+    margin: 10px 0;
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 0;
+    padding-left: 15px;
+}
+
+form input {
+    outline: none;
+    padding: 10px 0;
+    padding-left: 15px;
+    border: 1px solid #fff;
+    font-size: 15px;
+    color: #fff;
+}
+
+.box2 {
+    padding: 8px 30px;
+    background: none;
+    transition: all ease-in-out .5s;
+}
+
+.box2:hover {
+    background-color: #fff;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* contact end  */
+
+/* blog start  */
+#blogs {
+    padding: 8% 6%;
+}
+
+.heading5 {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.blog img {
+    width: 100%;
+    max-width: 100%;
+    cursor: pointer;
+    transition: all ease-in-out .5s;
+    display: block;
+    transform: scale(1);
+}
+
+.blog:hover img {
+    transform: scale(1.1);
+}
+
+.blogarea {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    gap: 20px;
+    text-align: center;
+}
+
+.blogarea h3 {
+    margin: 10px;
+}
+
+.blogarea p {
+    font-size: 13px;
+    padding: 0 11%;
+    line-height: 25px;
+    margin: 10px 0;
+}
+
+.blogarea a {
+    color: #fff;
+    background: none;
+    border: 1px solid #fff;
+    transition: all ease-in-out .5s;
+    padding: 7px 20px;
+    line-height: 50px;
+    font-size: 14px;
+}
+
+.blogarea a:hover {
+    color: black;
+    background-color: #fff;
+    font-weight: 700;
+}
+
+.blog-post {
+    position: relative;
+    overflow: hidden;
+}
+
+.date-admin {
+    position: absolute;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transform: translateY(23rem);
+    padding: 15px 0;
+    width: 100%;
+    background-color: black;
+    cursor: pointer;
+    transition: all ease-in-out .5s;
+}
+
+.blog-post:hover .date-admin {
+    transform: translateY(0);
+}
+
+.blog-post img:hover .date-admin {
+    bottom: 4px;
+}
+
+.date-admin i {
+    color: yellow;
+}
+
+.date-admin h6 {
+    font-size: 13px;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+}
+
+.date i {
+    margin: 0 8px;
+}
+
+#user {
+    position: absolute;
+    left: 75%;
+}
+
+/* blogs section end  */
+
+/* footer section start  */
+footer {
+    text-align: center;
+    padding: 0 18%;
+}
+
+.button {
+    margin: 10px 0 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.btn5 {
+    padding: 10px 30px;
+    border: 1px solid #fff;
+    color: #fff;
+    transition: all ease-in-out .5s;
+}
+
+.btn5:hover {
+    background-color: #fff;
+    color: black;
+    font-weight: 700;
+}
+
+footer p {
+    padding-bottom: 90px;
+}
+
+/* pc sreeen  */
+@media (min-width:1025px) and (max-width:1200px) {
+    .service {
+        grid-template-columns: repeat(auto-fit, minmax(204px, auto));
+    }
+
+    .row1 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(215px, auto));
+        gap: 2rem;
+    }
+
+    footer {
+        padding: 0 11%;
+    }
+
+    #home {
+        padding-top: 10%;
+    }
+
+    #menu {
+        padding-top: 10%;
+    }
+
+    #about {
+        padding-top: 10%;
+    }
+
+    #reviews {
+        padding-top: 10%;
+    }
+
+    #contact {
+        padding-top: 10%;
+    }
+
+    #blogs {
+        padding-top: 10%;
+    }
+}
+
+/* tablet view  */
+@media (max-width:1024px) {
+    .header .fa-magnifying-glass {
+        display: none;
+    }
+
+    .header {
+        padding: 2% 0;
+    }
+
+    .header .fa-cart-shopping {
+        display: none;
+    }
+
+    .header .nav {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: -600px;
+        text-align: center;
+        background-color: black;
+        width: 100%;
+        transition: all ease-in-out .3s;
+    }
+
+    .header .logo {
+        display: block;
+    }
+
+    .header .nav .logo1 {
+        display: none;
+    }
+
+    .nav li {
+        padding: 10px 0;
+    }
+    .nav li a{
+        text-decoration: underline;
+    }
+
+    .check-btn {
+        display: block;
+    }
+
+    .header i {
+        color: white;
+        font-size: 25px;
+    }
+
+    #check:checked~ul {
+        top: 100%;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    .header{
+        padding: 2% 5%;
+    }
+    #home {
+        padding: 0% 8%;
+    }
+
+    .service {
+        padding: 16% 33% 7%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    #home p {
+        font-size: 14px;
+    }
+
+    #menu {
+        padding: 16% 8% 10%;
+    }
+
+    h1 {
+        font-size: 43px;
+    }
+
+    #home .btn1 {
+        font-size: 19px;
+        padding: 12px 45px;
+        line-height: 81px;
+    }
+
+    .menubox1,
+    .menubox2 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .menu-box img {
+        max-width: 100%;
+        width: 100%;
+        width: 32rem;
+    }
+
+    .star i {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 27px;
+    }
+
+    .service1 i {
+        margin-bottom: 10px;
+        width: 33px;
+        height: 33px;
+        padding: 29px;
+        font-size: 36px;
+    }
+
+    .service1 p {
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 27px;
+        margin: 23px 0;
+    }
+
+    .menu-list h5 {
+        font-size: 22px;
+    }
+
+    .menu-list a {
+        line-height: 67px;
+        font-size: 16px;
+        padding: 11px 30px;
+    }
+
+    h1 {
+        font-size: 37px;
+    }
+
+    #about {
+        padding: 16% 18% 2%;
+    }
+
+    .about-us {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-us img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .text1 p {
+        margin: 20px 0;
+        font-size: 14px;
+    }
+
+    .row {
+        display: flex;
+        color: #fff;
+        justify-content: space-around;
+    }
+
+    .text1 a {
+        line-height: 11rem;
+        font-size: 16px;
+        padding: 11px 30px;
+    }
+
+    #reviews {
+        padding: 16% 27% 10%;
+    }
+
+    .row1 {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .text4 p {
+        font-size: 14px;
+    }
+
+    #contact {
+        padding: 16% 18% 3%;
+    }
+
+    .contact-us {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .email {
+        margin: 0;
+    }
+
+    .number {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .number p {
+        font-size: 14px;
+    }
+
+    .area h1 {
+        text-transform: uppercase;
+        margin: 50px 0;
+    }
+
+    form .box {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .box2 {
+        font-size: 16px;
+        padding: 11px 30px;
+    }
+
+    form #box1 {
+        width: 100%;
+        margin: 10px 0 20px;
+    }
+
+    #blogs {
+        padding: 16% 18% 6%;
+    }
+
+    .blogarea {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .blogarea h3 {
+        margin: 20px 0;
+    }
+
+    .blogarea p {
+        font-size: 14px;
+    }
+
+    .blogarea a {
+        font-size: 16px;
+        padding: 11px 30px;
+        line-height: 95px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 0 18%;
+    }
+
+    .button {
+        margin: 10px 0 30px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .btn5 {
+        font-size: 20px;
+    }
+
+    footer p {
+        padding: 50px 0;
+        font-size: 20px;
+    }
+}
+
+/* mobile screen  */
+@media (min-width:300px) and (max-width:767px) {
+    .header{
+        padding: 4% 8%;
+    }
+    .header i {
+        color: white;
+        font-size: 22px;
+    }
+    #home {
+        padding: 8% 8%;
+    }
+
+    .service {
+        padding: 16% 10% 7%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+    #home p {
+        font-size: 14px;
+    }
+
+    #menu {
+        padding: 25% 8% 10%;
+    }
+
+    h1 {
+        font-size: 43px;
+    }
+
+    #home .btn1 {
+        font-size: 19px;
+        padding: 12px 45px;
+        line-height: 81px;
+    }
+
+    .menubox1,
+    .menubox2 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .menu-box img {
+        max-width: 100%;
+        width: 100%;
+        width: 32rem;
+    }
+
+    .star i {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 27px;
+    }
+    .service1 i {
+        margin-bottom: 10px;
+        width: 28px;
+        height: 28px;
+        padding: 20px;
+        text-align: center;
+        background-color: orange;
+        border-radius: 50%;
+        font-size: 30px;
+    }
+
+    .service1 p {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    h3 {
+        font-size: 27px;
+        margin: 23px 0;
+    }
+
+    .menu-list h5 {
+        font-size: 22px;
+    }
+
+    .menu-list a {
+        line-height: 67px;
+        font-size: 16px;
+        padding: 11px 30px;
+    }
+
+    h1 {
+        font-size: 37px;
+    }
+
+    #about {
+        padding: 25% 8% 2%;
+    }
+   
+    .about-us {
+        display: grid;
+        grid-template-columns: 1fr;   
+    }
+
+    .about-us img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .text1 p {
+        margin: 20px 0;
+        font-size: 14px;
+    }
+
+    .row {
+        display: grid;
+        color: #fff;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .row h6{
+        font-size: 14px;
+    }
+    .text2 {
+        margin: 0;
+    }
+    .text1 a {
+        line-height: 11rem;
+        font-size: 16px;
+        padding: 11px 30px;
+    }
+
+    #reviews {
+        padding: 25% 8% 10%;
+    }
+
+    .row1 {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .text4 p {
+        font-size: 14px;
+    }
+
+    #contact {
+        padding: 25% 8% 3%;
+    }
+
+    .contact-us {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .email {
+        margin: 0;
+    }
+
+    .number {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    h3 {
+        font-size: 24px;
+        margin: 23px 0;
+    }
+    .number i{
+        width: 28px;
+        height: 28px;
+        padding: 20px;
+        font-size: 30px;
+    }
+    .number p {
+        font-size: 18px;
+    }
+
+    .area h1 {
+        text-transform: uppercase;
+        margin: 50px 0;
+    }
+
+    form .box {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .box2 {
+        font-size: 16px;
+        padding: 11px 30px;
+    }
+
+    form #box1 {
+        width: 100%;
+        margin: 10px 0 20px;
+    }
+
+    #blogs {
+        padding: 25% 8% 6%;
+    }
+
+    .blogarea {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .blogarea h3 {
+        margin: 20px 0;
+    }
+
+    .blogarea p {
+        font-size: 14px;
+    }
+
+    .blogarea a {
+        font-size: 16px;
+        padding: 11px 30px;
+        line-height: 95px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 0 8%;
+    }
+
+    .button {
+        margin: 10px 0 30px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .btn5 {
+        font-size: 20px;
+    }
+
+    footer p {
+        padding: 50px 0;
+        font-size: 14px;
+        color: #fff;
+        font-weight: 500;
+        line-height: 30px;
+    }
+    .button {
+        margin: 10px 0 30px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:299px){
+    .header{
+        padding: 4% 11%;
+    }
+    .logo img{
+        width: 120px;
+    }
+    .header i {
+        color: white;
+        font-size: 15px;
+    }
+    .header ul li{
+        padding: 0;
+    }
+    .header ul li a{
+        font-size: 10px;
+    }
+    #home {
+        padding: 8% 11%;
+    }
+
+    .service {
+        padding: 16% 10% 7%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+    #home p {
+        font-size: 14px;
+    }
+
+    #menu {
+        padding: 25% 11% 10%;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    #home .btn1 {
+        font-size: 19px;
+        padding: 12px 45px;
+        line-height: 81px;
+    }
+
+    .menubox1,
+    .menubox2 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .menu-box img {
+        max-width: 100%;
+        width: 100%;
+        width: 32rem;
+    }
+
+    .star i {
+        font-size: 15px;
+    }
+
+    h3 {
+        font-size: 13px;
+    }
+    .service1 i {
+        margin-bottom: 5px;
+        width: 14px;
+        height: 14px;
+        padding: 10px;
+        text-align: center;
+        background-color: orange;
+        border-radius: 50%;
+        font-size: 15px;
+    }
+
+    .service1 p {
+        margin-top: 5px;
+        font-size: 7px;
+    }
+
+    h3 {
+        font-size: 14px;
+        margin: 12px 0;
+    }
+
+    .menu-list h5 {
+        font-size: 11px;
+    }
+
+    .menu-list a {
+        line-height: 34px;
+        font-size: 8px;
+        padding: 6px 15px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    #about {
+        padding: 25% 11% 2%;
+    }
+   
+    .about-us {
+        display: grid;
+        grid-template-columns: 1fr;   
+    }
+
+    .about-us img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .text1 p {
+        margin: 10px 0;
+        font-size: 7px;
+    }
+
+    .row {
+        display: grid;
+        color: #fff;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .row h6{
+        font-size: 7px;
+    }
+    .text2 {
+        margin: 0;
+    }
+    .text1 a {
+        line-height: 4rem;
+        font-size: 8px;
+        padding: 6px 15px;
+    }
+
+    #reviews {
+        padding: 25% 11% 10%;
+    }
+
+    .row1 {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .text4 p {
+        font-size: 7px;
+    }
+
+    #contact {
+        padding: 25% 11% 3%;
+    }
+
+    .contact-us {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 1.5rem;
+    }
+    .contact-us iframe {
+        height: 12rem;
+    }
+
+    .email {
+        margin: 0;
+    }
+
+    .number {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    h3 {
+        font-size: 12px;
+        margin: 12px 0;
+    }
+    .number i{
+        width: 14px;
+        height: 14px;
+        padding: 10px;
+        font-size: 15px;
+    }
+    .number p {
+        font-size: 9px;
+    }
+
+    .area h1 {
+        text-transform: uppercase;
+        margin: 25px 0;
+    }
+
+    form .box {
+        width: 100%;
+        margin: 10px 0;
+    }
+    form .box {
+        font-size: 12px;
+    }
+    .box2 {
+        font-size: 8px;
+        padding: 11px 30px;
+    }
+
+    form #box1 {
+        width: 100%;
+        margin: 5px 0 10px;
+    }
+
+    #blogs {
+        padding: 25% 11% 6%;
+    }
+
+    .blogarea {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .blogarea h3 {
+        margin: 10px 0;
+    }
+
+    .blogarea p {
+        font-size: 7px;
+    }
+
+    .blogarea a {
+        font-size: 8px;
+        padding: 6px 15px;
+        line-height: 40px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 0 8%;
+    }
+
+    .button {
+        margin: 5px 0 15px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .btn5 {
+        font-size: 10px;
+    }
+
+    footer p {
+        padding: 13px 0;
+        font-size: 7px;
+        color: #fff;
+        font-weight: 500;
+        line-height: 15px;
+    }
+    .button {
+        margin: 5px 0 15px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
